@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pomodoro Sayti</title>
-    <link rel="stylesheet" href="css/style.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Kalkulyator ⌨</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/normalize.css">
 
     <link rel="icon" href="img/logo.png">
 </head>
@@ -19,7 +16,6 @@
             <div class="head-top">
                 <a class="logo" href="index.html">
                     <img class="logo-img" src="img/logo.png" alt="logo" width="55" height="55">
-                    <a class="logo-link" href="index.html">Pomodoro</a>
                 </a>
                 
                 <nav class="head-nav">
@@ -43,13 +39,14 @@
                             </a>
                         </li>
                         <li class="head-li">
-                            <a class="head-li-a" href="https://calculator-uz.vercel.app/" target="_blank">
-                                <img class="head-li-img" src="img/logo (2).png" alt="logo" width="50" height="50">
-                                <a class="head-li-link-3 head-li-link" href="https://calculator-uz.vercel.app/" target="_blank"> Ga Qaytish</a>
+                            <a href="https://pomodoro-uz.vercel.app/">
+                                <img src="img/logo (2).png" alt="pomodoro-uz" width="55" height="55">
+                                <a class="head-li-link-4 head-li-link" href="https://pomodoro-uz.vercel.app/" target="_blank"> Ga Qaytish</a>
                             </a>
                         </li>
                     </ul>
                 </nav>
+                
                 
             </div>
         </div>
@@ -57,18 +54,27 @@
     
     <main class="site-main">
         <div class="container">
-            <section class="pomodoro timer">
-                <div id="timer" class="time">25:00</div>
-                <div class="btn-wrapper">
-                    <button class="toggleButton" id="startButton">Boshlash ▶</button>
-                    <button class="toggleButton" id="resetButton">Qayta 🔄</button>
+            <div class="calculator">
+                <input type="text" id="result" readonly>
+                <div class="buttons">
+                    <button onclick="clearResult()">C</button>
+                    <button onclick="appendToResult('7')">7</button>
+                    <button onclick="appendToResult('8')">8</button>
+                    <button onclick="appendToResult('9')">9</button>
+                    <button onclick="appendToResult('+')">+</button>
+                    <button onclick="appendToResult('4')">4</button>
+                    <button onclick="appendToResult('5')">5</button>
+                    <button onclick="appendToResult('6')">6</button>
+                    <button onclick="appendToResult('-')">-</button>
+                    <button onclick="appendToResult('1')">1</button>
+                    <button onclick="appendToResult('2')">2</button>
+                    <button onclick="appendToResult('3')">3</button>
+                    <button onclick="appendToResult('*')">*</button>
+                    <button onclick="appendToResult('0')">0</button>
+                    <button onclick="calculateResult()">=</button>
+                    <button onclick="appendToResult('/')">/</button>
                 </div>
-                <video class="video" controls>
-                    <source src="videos/zaurbek star.mp4">
-                </video>
-
-                <audio class="visually-hidden" controls id="alarm" src="music/mixkit-happy-bells-notification-937.wav" type="audio/wav"></audio>
-            </section>
+            </div>
         </div>
     </main>
     
