@@ -1,0 +1,216 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/inter-v2-latin_cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/inter-v2-latin_cyrillic-regular.woff") format("woff"); 
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/inter-v2-latin_cyrillic-500.woff2") format("woff2"),
+    url("../fonts/inter-v2-latin_cyrillic-500.woff") format("woff"); 
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/inter-v2-latin_cyrillic-700.woff2") format("woff2"),
+    url("../fonts/inter-v2-latin_cyrillic-700.woff") format("woff"); 
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+*:focus {
+    outline-color: #4285f4;
+    outline-width: 4px;
+    outline-offset: 2px;
+    outline-style: dashed;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #357ae8;
+    color: #222;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1056px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head-top {
+    display: flex;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    border-bottom: 3px solid rgba(4, 0, 255, 0.362);
+}
+
+.head-nav {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+}
+
+.logo-img {
+    margin: 0;
+    padding: 0;
+}
+
+.head-ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.head-li {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.head-li:last-child {
+    margin: 0;
+    padding: 0;
+}
+
+
+.head-li-img {
+    display: block;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.head-li-link {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.head-li-link-1:hover {
+    color: #ff7500;
+    font-size: 18px;
+}
+.head-li-link-2:hover {
+    color: #fff200;
+    font-size: 18px;
+}
+
+.head-li-link-3:hover {
+    color: #BE123C;
+    font-size: 18px;
+}
+
+.head-li-link-4:hover {
+    color: red;
+    font-size: 18px;
+}
+
+/* main */
+
+.calculator {
+    margin-top: 100px;
+    width: 279px; 
+    height: 342px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(4, 0, 255, 0.362);
+    border-radius: 16px;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(30, 0, 255, 0.784);
+    text-align: center;
+}
+
+input {
+    color: #4285f4;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    border: 10px solid #4285f4;
+    box-shadow: #0000006c 2px 2px 2px;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: 2px solid #4285f4;
+    
+}
+
+.buttons {
+    gap: 10px;
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: #4285f4;
+    color: #fff;
+    box-shadow: #0000006c 2px 2px 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ae8;
+}
